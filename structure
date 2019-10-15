@@ -1,0 +1,53 @@
+####A JSON file is a database, a database of unstructured data so think of it in that manner#####
+
+
+##Good####
+
+{
+   
+    "pets": [
+    
+    {
+    
+        "type": "dog",
+        "Name": "Fido"
+    },
+    
+    {
+    
+        "type": "cat",
+        "Name":  "Kitten"
+    },
+    
+    {
+       "type": "horse",
+       "Name": "Secretariat"
+    }
+    
+  ]
+}
+
+
+
+
+##Bad##
+
+{
+
+   "pets": [
+   
+     {
+        "type": "dog",
+        "Name": "Fido"
+     },
+   ],
+   
+   "cars": [
+   {
+   
+      "Make": "Honda"
+   }
+  ]
+ }
+   
+   
