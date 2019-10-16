@@ -211,6 +211,14 @@ GET /comments?author.name=typicode
     }
 
 
-
+####Some Poweershell
  
-   
+$data2 = Invoke-RestMethod -Uri http://1.1.1.1/colors/
+
+
+$data2
+
+Write-Output "===================================================================="
+
+$data2 | Select-Object -Property @{n='RGBA';e={($_.code | Select-Object -Expandproperty rgba)}}
+
