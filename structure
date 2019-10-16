@@ -164,6 +164,53 @@
 
 
 
+##Filter examples from an API browser i.e "Talend" or something like postman#####
+
+GET /posts?title=json-server&author=typicode
+GET /posts?id=1&id=2
+GET /comments?author.name=typicode
+
+##Or from our example above
+
+
+/colors?code.type=primary
+
+/colors?name=Black
+
+
+####Note this gives me an issue#####
+
+{
+
+    "all": {
+    
+        "colors": [
+        {
+           "blah": "blah"
+        },
+        {
+           "blah2": "blah2"
+        }
+      ]
+    }
+  }
+  
+  ##but this works no issue####
+  
+  {
+
+    
+        "colors": [
+        {
+           "blah": "blah"
+        },
+        {
+           "blah2": "blah2"
+        }
+      ]
+    }
+
+
 
  
    
