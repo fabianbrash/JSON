@@ -33,6 +33,7 @@
 ##Bad##
 
 {
+  "Bad": {
 
    "pets": [
    
@@ -49,5 +50,11 @@
    }
   ]
  }
+ }
    
+ ##the first object has uniform data while the second has a mixture
+ ##of data, pets and cars and the key:value pairs are different
+ #which in the case of PowerShell would return odd results 
+ 
+ $bad = Invoke-RestMethod -URI http://1.1.1.1/Bad/
    
